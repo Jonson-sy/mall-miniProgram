@@ -1,0 +1,11 @@
+<!--components/tab-control/tab-control.wxml-->
+<!-- 注意自定义组件必不可少的配置为 "component": true,  但配置文件不能写注释 -->
+<view class="tab-control">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view bind:tap="itemClick"
+          class="tabItem {{ index == currentIndex ? 'active' : '' }}"
+          data-index="{{index}}">
+     <text class="tabItemText"> {{item}}</text>
+    </view>
+  </block>
+</view>

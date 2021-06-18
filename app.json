@@ -3,12 +3,11 @@
     "pages/home/home",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/detail/detail"
   ],
   "window": {
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff5777",
-    "navigationBarTitleText": "购物街",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -41,7 +40,7 @@
         "iconPath": "assets/img/tabbar/profile.png",
         "selectedIconPath": "assets/img/tabbar/profile_active.png"
       }
-      
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
