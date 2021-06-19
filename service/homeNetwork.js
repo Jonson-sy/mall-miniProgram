@@ -1,7 +1,17 @@
-import request from './network'
+import myRequest from './network'
 
 export function getMultiData() {
- return request({
+ return myRequest({
     url:'/home/multidata',
+  })
+}
+
+export function getGoodsData(type,page){
+  return myRequest({
+    url:'/home/data',
+    data:{
+      type,
+      page
+    }
   })
 }

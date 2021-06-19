@@ -1,0 +1,13 @@
+/* components/s-goods/s-goods.wxss */
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin-top: 16rpx; */
+}
+
+/* 注意：使用组件时的 "goods-item" 与组件内的 "item" 两个不是一个类，中间隔着#shadow-root */
+.goods-item {
+  width: 48%;
+  position: relative; 
+}

@@ -1,3 +1,19 @@
 <!--pages/home/home.wxml-->
 <!-- 1,轮播图的展示 -->
-<swiper list = "{{banner}}"/>
+<s-swiper list = "{{banner}}"/>
+<!-- 2,推荐的展示 -->
+<s-recommend recommend = "{{recommend}}" bind:imageLoad="imageLoad"></s-recommend>
+<!-- 3，流行数据的展示 -->
+<s-popular></s-popular>
+<!-- 4,tabcontrol的展示 -->
+<s-tab-control titles = "{{titles}}" 
+               bind:tabClick = "tabClick" 
+               id = "tab-control"
+               class = "{{isTabFixed ? 'fixed': ''}}" >
+</s-tab-control>
+<s-tab-control  titles = "{{titles}}" wx:if="{{isTabFixed}}"></s-tab-control>
+<!-- 5,商品列表的展示 -->
+<s-goods goodslist = "{{goods[currentType].list}}"></s-goods>
+<!-- 6,返回顶部（ 注意hidden: hidden属性对于自定义的组件是无效 ） -->
+<s-back-top wx:if="{{isShowBackTop}}"></s-back-top>
+

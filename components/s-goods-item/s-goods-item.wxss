@@ -1,0 +1,39 @@
+/* components/s-goods-item/s-goods-item.wxss */
+/* 注意事项: 在wxss中不能引用本地图片,只能引用网络图片 */
+.item {
+  text-align: center;
+  color: #333;
+  padding-bottom: 110rpx;
+}
+
+.goods-img {
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+.goods-desc {
+  position: absolute;
+  bottom: 24rpx;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+}
+
+.desc-title {
+  font-size: 30rpx;
+}
+
+.price {
+  color: #ff5777;
+  margin-right: 30rpx;
+}
+
+.collect {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 6rpx 10rpx 0 0 ;
+  position: relative;
+  top: 5rpx;
+}

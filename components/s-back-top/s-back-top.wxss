@@ -1,0 +1,8 @@
+/* components/s-back-top/s-back-top.wxss */
+.back-top-img{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 14rpx;
+}

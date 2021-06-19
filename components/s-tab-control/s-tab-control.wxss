@@ -2,12 +2,13 @@
 .tab-control {
   display: flex;
   background-color: #fff;
+  padding-bottom: 10rpx;
 }
 
 .tabItem {
   flex: 1;
-  height: 80rpx;
-  line-height: 80rpx;
+  height: 88rpx;
+  line-height: 88rpx;
   text-align: center;
   font-size: 32rpx;
 }
@@ -18,5 +19,5 @@
 
 .active .tabItemText {
   border-bottom: 6rpx solid #ff5777;
-  padding: 20rpx;
+  padding: 16rpx 20rpx;
 }
